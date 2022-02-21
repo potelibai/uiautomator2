@@ -198,6 +198,7 @@ class Initer():
             raise Exception(
                 "arch(%s) need to be supported yet, please report an issue in github"
                 % self.abis)
+        # 打包我们 fork 的 agent,并修改这里
         return GITHUB_BASEURL + '/atx-agent/releases/download/%s/%s' % (
             __atx_agent_version__, name.format(v=__atx_agent_version__))
 
